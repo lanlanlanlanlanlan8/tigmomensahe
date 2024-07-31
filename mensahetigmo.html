@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #007bff;
+        }
+        h2 {
+            font-size: 1.2em;
+            color: #555;
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TIGMO</h1>
+        <h2>The Art of Unspoken Words</h2>
+        <p>Enter Your Code:</p>
+        <input type="text" id="code" placeholder="Enter your code">
+        <input type="button" value="Submit" onclick="checkCode()">
+    </div>
+
+    <script>
+        // Define your codes and messages here
+        const codes = {
+            'TIGMOMENSAHE01JC': `Hi nay alam ko medyo may pagka-mahilig ka sa bracelet eh di ko po sure eh, why po sunshine bracelet isa ka po kasi sa mga happy pill ko araw araw and also yung positive energy na ibinibigay mo for me saka po ikaw yung safe place ko ikaw yung pahinga ko. Nay naalala nyo po nung sabi ko na babawi ako sinisimulan ko na nay now na talaga as in hahaha I want to take this opportunity po na ito to say thankyou for everything nay sa mga pakikinig ng rants ko, sa pag susuporta sa mga ginagawa ko, sa mga bigay nyo for me na-a-appreciate ko po yun bg sobra sobra ang dami nyo pong ginawa for me kaya nay sabi ko sayo po diba hindi ako susuko for you saka di po kita iiwan kasi ikaw yung meron ako nay, ikaw nalang yung kakampi ko kaya nay pakipansin na po ako please hahaha nakuha pang mag joke eh di eme po seryoso na, thankyou nay for being there po palagi ni hindi mo man labg sinukoan yung pag kamakulit ko palagi mong pinapa feel sakin na special ako for you na totoo mo talaga akong anak kaya po nay madaming thankyou sayo kasi andyan ka nakasubaybay pa din sakin lalo na po nung panahon na mentally unstable ako minsan medyo nakakahiya na po kasi dumadagdag pa ako pero never nyong ipinaramdam yun sakin nay kaya lots of thankyou nalang po ang masasabi ko sayo saka po I want to say sorry din if minsan nag tatampo ako tapos di ko maintindihan yung nangyayari pero nay kahit ganun pipilitin ko pong intindihin tapos yung pag ka makulit ko pa po hindi na masyadong okay pero naha-handle nyo pa din ikaw yan nay eh syempre kaya nyo po yan hahaha so ayun nay thankyouuu po palagi and iloveyou, iloveyou, iloveyou until the scientists find the end of the universe imissyousomuch po thankyou ulit nay for being my kakampi po and sa tuwing wala akobg makukuhaan ng lakas ng loob andyan ka palagi. Nay palagi nyo pong isipin na love kita kasi ikaw po yan eh yung pagka moody mo palagi kapag nang t-trip ka yan nay sabi ko po sayo isa yan sa mga reason why kita love eh HAHAHA loveyouu nay to infinity and beyond missyou po.\n\nGaling po sa baby nyo:>`
+            // Add more codes and messages if needed
+        };
+
+        function checkCode() {
+            const code = document.getElementById('code').value;
+            const message = codes[code];
+
+            if (message) {
+                alert(message);
+            } else {
+                alert('Invalid code. Please reach out to Tigmo\'s admin to fix it.');
+            }
+        }
+    </script>
+</body>
+</html>
